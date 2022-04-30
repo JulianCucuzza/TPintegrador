@@ -1,0 +1,45 @@
+.card-group{margin-top: 20px;}
+
+.imagen{
+    filter: brightness(50%);
+}
+
+.hero-text {
+    text-align: right;
+    position: absolute;
+    top: 40%;
+    left: 72%;
+    transform: translate(-20%, -20%);
+    color: white;
+    
+  }
+  @media only screen and (max-width: 600px) {
+   .hero-text {
+    text-align: right;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-20%, -20%);
+    color: white;
+    font-size: 14px;
+    
+        }
+    }
+    .div-izq{
+      background-color: gray;
+      margin-left: -12px;
+    }
+    .contact-form{
+      width: 900px; 
+      height: auto;
+    }
+    .fondo{
+      background-color: #1c5170 !important;
+    }
+    .link{
+      color: white;
+      margin-right: 50px;
+    }
+    .link:hover{
+      color: white;
+    }
