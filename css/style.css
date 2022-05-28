@@ -1,0 +1,136 @@
+.bg-secondary{
+    background-color: rgb(79, 78, 78) !important;
+}
+
+#verde{
+    color: rgb(0, 233, 0) !important;
+}
+
+
+
+nav{
+    height: 80px;
+
+}
+
+
+ul{
+    margin-left: 350px;
+}
+#ulfoot{
+    margin-left: 250px;
+}
+
+#CBS{
+    margin-left: 30px;
+}
+
+.contenedor{
+    position: relative;
+    display: inline;
+    filter: brightness(50%);
+}
+
+.d-block::before{
+background-color: black;
+}
+
+.centrado{
+    position: absolute;
+    top: 180px;
+    color: aqua;
+    margin-right: 105px;
+}
+
+.h2{
+    color: white;
+    text-align: right
+}
+
+.p{
+    text-align: right;
+    margin-left:  627px;
+    color: white;
+}
+
+.button{
+    margin-left: 828.7px;
+    font-size: larger !important;
+}
+
+.btn-secondary{
+    background-color:rgb(83, 185, 83) !important;
+}
+
+.carousel-item{
+    filter: brightness(50%);
+}
+
+#cf1{
+    display: flex;
+    justify-content: center;
+}
+
+.div-izq {
+    background-color: rgb(118, 118, 118);
+    margin-left: -12px;
+}
+
+.btn-success{
+    background-color: rgb(117,182,0.07) !important;
+}
+
+#nav-item{
+    margin-left: 5%;
+}
+
+#nav-item2{
+    margin-left: -8%;
+}
+
+
+.bg-dark{
+    background-color: rgb(30, 84, 94) !important;
+}
+
+#cont-div{
+    width: 700px;
+    
+}
+
+.container-fluid{
+    display: flex;
+    justify-content:center;
+}
+
+.flex-item{
+    background-color: rgb(255, 255, 255);
+    margin: 2px;
+    margin-top: 30px;
+    margin-bottom: 500px;
+    height: 210px;
+    width: 198px;
+}
+
+
+#it2{
+    border: 3px solid blue;
+}
+#it3{
+    border: 3px solid green;
+}
+
+.row{
+    margin: auto;
+}
+
+.navbar{
+    text-align: center;
+}
+
+.btn-primary{
+    background-color: rgb(117,182,0.07)!important;
+    border-color: rgb(117,182,0.07) !important
+}
+
+

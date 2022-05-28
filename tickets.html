@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <script src="js/tickets.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+                <div class="container-fluid" id="cf1">
+                    <a class="navbar-brand" href="#" id="CBS">
+                        Conf Bs As
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">La conferencia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Los oradores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">El lugar y la fecha</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Conviértete en orador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="tickes.html" id="verde">Comprar tickets</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>  
+        <main>
+            <div class="container-fluid">
+                <div class="flex-item" style="border: 2px solid rgb(0, 163, 213);">
+                    <h5 style="padding-top:20px; text-align: center; font-size: 20px;">
+                        Estudiante
+                    </h5>
+                    <p style="padding-top: 12px; text-align: center; font-size: 20px;">
+                        Tienen un descuento
+                    </p>
+                    <p style="padding-top: 14px; text-align: center; font-size: 20px;">
+                        <b> 80% </b>
+                    </p>
+                    <p style="text-align: center; font-size: 15px; color: rgb(132, 132, 132);">
+                        * presentar documentación
+                    </p>
+                </div>
+                <div class="flex-item" style="border: 2px solid rgb(0, 200, 231);">
+                    <h5 style="padding-top:20px; text-align: center; font-size: 20px;">
+                        Trainee
+                    </h5>
+                    <p style="padding-top: 12px; text-align: center; font-size: 20px;">
+                            Tienen un descuento
+                    </p>
+                    <p style="padding-top: 14px; text-align: center; font-size: 20px;">
+                        <b> 50% </b>
+                    </p>
+                    <p style="text-align: center; font-size: 15px; color: rgb(132, 132, 132);">
+                        * presentar documentación
+                    </p>
+                </div>
+                <div class="flex-item" style="border: 2px solid rgb(204, 218, 52);">
+                    <h5 style="padding-top:20px; text-align: center; font-size: 20px;">
+                        Junior
+                    </h5>
+                    <p style="padding-top: 12px; text-align: center; font-size: 20px;">
+                            Tienen un descuento
+                    </p>
+                    <p style="padding-top: 14px; text-align: center; font-size: 20px;">
+                        <b> 15% </b>
+                    </p>
+                    <p style="text-align: center; font-size: 15px; color: rgb(132, 132, 132);">
+                        * presentar documentación
+                    </p>
+                </div>  
+            </div>
+            <div style=" text-align: center; margin-top: -490px; ">
+                <p>
+                    VENTA
+                </p>
+                <h1 style="margin-top: -15px ;">
+                    VALOR DE TICKET $200
+                </h1>
+            </div>
+            <div>
+                <Form class="grid-container" method="post">
+                    <div class="row" style="margin-left: 300px">
+                        <div class="col-4">
+                          <input type="text" id="nombre" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                        </div>
+                        <div class="col-4">
+                          <input type="text" id="apellido" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 10px; margin-left: 300px">
+                        <div class="col-8">
+                            <input type="email" id="email" class="form-control" placeholder="Correo" aria-label="Correo">
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 10px; margin-left: 300px">
+                        <div class="col-4">
+                            <label class="form-label">
+                                Cantidad
+                            </label>
+                          <input type="text" id="cant" class="form-control" placeholder="cantidad" aria-label="cantidad" onchange="Totales();">
+                        </div>
+                        <div class="col-4">
+                            <label class="form-label">
+                                Categoria
+                            </label>
+                            <select id="inputState" class="form-select" onchange="Totales();">
+                                <option selected>General</option>
+                                <option>Estudiante</option>
+                                <option>Trainee</option>
+                                <option>Junior</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-top: 40px; margin-left: 300px;">
+                        <div class="col-8">
+                            <input type="text" id="total" disabled class="form-control" placeholder="Total a Pagar: $" aria-label="Total" style="background-color:rgba(117, 227, 255, 0.563);">
+                        </div>
+                    </div>
+                    
+                    <div style="padding-top: 40px; margin-left: 300px;">
+                        <button type="reset" class="btn btn-primary active col-lg-4" data-bs-toggle="button" autocomplete="off" aria-pressed="true">Borrar</button>
+                        <button type="button" class="btn btn-primary active col-lg-4" data-bs-toggle="button" autocomplete="off" aria-pressed="true" onclick="Validar();">Resumen</button>
+                    </div>
+                </Form>
+            </div>
+
+        </main>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer>
+            <div>
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                    <div class="container-fluid justify-content-between">
+                        <div class="" id="navbarSupportedContent">
+                            <ul class="navbar-nav" id="ulfoot">
+                                <li class="nav-item" id="nav-item2">
+                                    <a class="nav-link active" href="#">
+                                        Preguntas
+                                        Frecuentes
+                                    </a>
+                                </li>
+                                <li class="nav-item" id="nav-item">
+                                    <a class="nav-link active" href="#">
+                                        Contáctanos
+                                    </a>
+                                </li>
+                                <li class="nav-item" id="nav-item">
+                                    <a class="nav-link active" href="#">
+                                        Prensa
+                                    </a>
+                                </li>
+                                <li class="nav-item" id="nav-item">
+                                    <a class="nav-link active" href="#">
+                                        Conferencia
+                                    </a>
+                                </li>
+                                <li class="nav-item" id="nav-item">
+                                    <a class="nav-link active" href="#">
+                                        Términos y
+                                        condiciones
+                                    </a>
+                                </li>
+                                <li class="nav-item" id="nav-item">
+                                    <a class="nav-link active" href="#">
+                                        Privacidad
+                                    </a>
+                                </li>
+                                <li class="nav-item" id="nav-item">
+                                    <a class="nav-link active" href="#">
+                                        Estudiantes
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>
